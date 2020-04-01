@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1.5, initial-scale=1.0">
+    <title>樣式繼承與層疊</title>
+    <style>
+        body {
+            color: red;
+            font-family: Arial;
+        }
+
+        div {
+            color: green;
+        }
+
+        p {
+            font-size: 14px;
+            font-family: arial;
+        }
+
+        p {
+            font-size: 16px;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <p>有繼承性</p>
+    <div>
+        <p>可區域性繼承性</p>
+    </div>
+</body>
+
+</html>

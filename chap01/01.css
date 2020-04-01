@@ -1,3 +1,31 @@
 h1 {
     color: red;
 }
+
+div {
+    font-size: 28px;
+    line-height: 200%;
+}
+
+input[type="submit"] {
+    color: #fff;
+    font-size: 14px;
+    padding: 6px 30px;
+    border-radius: 3px;
+    border: 1px solid #f00;
+    background-color: rgba(255, 7, 76);
+}
+
+/* 可以使用opacity屬性設置透明度 */
+/* input[type="submit"]:hover {
+    opacity: 0.5;
+    緩慢改變透明度
+    transition: all rase-in 0.2s;
+} 
+*/
+
+/* 也可以使用alpha透明通道設置透明度： */
+input[type="submit"]:hover {
+    background-color: rgba(255, 76, 76, 0.2);
+    transition: all rase-in 0.2s;
+}
