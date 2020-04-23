@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.4 屬性選擇器</title>
+</head>
+<style>
+    a[rel] {
+        color: green;
+    }
+
+    a[href][title] {
+        color: red;
+    }
+
+    a[href="https://ttom921.gitlab.io/"] {
+        color: blueviolet;
+    }
+
+    input[type="text"] {
+        border: 4px solid rgb(22, 238, 94);
+    }
+
+    p[class="urgent warning"] {
+        font-weight: bold;
+    }
+
+    p[class~="better"] {
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    *[lang|="en"] {
+        color: green;
+    }
+
+    div[class *="nav"] a {
+        text-decoration: none;
+    }
+
+    [class^="top"] {
+        background: yellow;
+    }
+
+    [class$="test"] {
+        background: yellow;
+    }
+</style>
+
+<body>
+    <h2>（1）E[attribute]選擇器</h2>
+    <pre>
+        a[rel] {
+            color: green;
+        }
+    </pre>
+    <a rel="nofollow" href="https://ttom921.github.io/">被施工的Tom的記錄</a>
+    <pre>
+        a[href][title] {
+            color: red;
+        }
+    </pre>
+    <a title="這是title屬性" titlecase }} href="https://ttom921.github.io/">被施工的Tom的記錄</a>
+    <hr>
+    <h2>（2）E[attribute = val] 選擇器</h2>
+    <pre>
+        a[href ="https://ttom921.github.io/"]{
+            color: red;
+        }
+    </pre>
+    <a href="https://ttom921.gitlab.io/">gitlab被施工的Tom的記錄</a>
+    <pre>
+        input[type="text"] {
+            border: 4px solid rgb(22, 238, 94);
+        }
+    </pre>
+    <input type="text">
+    <pre>
+        p[class="urgent warning"] {
+            font-weight: bold;
+        }
+    </pre>
+    <p class="urgent warning"> urgent warning
+    </pre>
+    <hr>
+    <h2>（3）E[attribute ~= val]選擇器</h2>
+    <pre>
+        p[class~="better"] {
+            font-weight: bold;
+            font-size: 24px;
+        }
+    </pre>
+    <p class="good better"> good better
+    </pre>
+    <hr>
+    <h2>（4）E[attribute |= val]選擇器</h2>
+    <pre>
+        *[lang|="en"] {
+            color: green;
+        } 
+    </pre>
+    <h1 lang="en">Hello!</h1>
+    <p lang="en-us">Greetings!</p>
+    <h2 lang="fr">Bonjour!</h2>
+    <div lang="cy-en">Jrooana!</div>
+    <hr>
+    <h2>（5）E[attribute *=val]選擇器</h2>
+    <div class="mainnav">
+        <a href="#">nav1</a>
+    </div>
+    <div class="pagenav">
+        <a href="#">nav2</a>
+    </div>
+    <hr>
+    <h2>（5）E[attribute *=val]選擇器</h2>
+    <pre>
+        [class^="top"] {
+            background: yellow;
+        }  
+    </pre>
+    <h1 class="top-header">Welcome</h1>
+    <p class="top-text">Hello world!</p>
+    <p class="topcontent">Are you learning CSS?</p>
+    <hr>
+    <h2>E[attribute $= val]選擇器</h2>
+    <pre>
+        [class$="test"] {
+            background: yellow;
+        }
+    </pre>
+    <div class="first_test">The first div element.</div>
+    <div class="second">The second div element.</div>
+    <div class="my-test">The third div element.</div>
+    <p class="mytest">This is some text in a paragraph.</p>
+</body>
+
+</html>
