@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.5 偽元素選擇器</title>
+</head>
+<style>
+    /* p:first-child::first-letter {
+        font-size: 3em;
+    } */
+    /* p::first-line {
+        color: red;
+    } */
+
+    /* p::before {
+        color: #00f;
+        content: "<strong>段落之前插入的內容</strong>.";
+    }
+
+    p::after {
+        color: #f00;
+        content: ".段落之後插入的內容";
+    } */
+    /* cite {
+        quotes: '“''”';
+        font-style: normal;
+    }
+
+    cite::before {
+        content: open-quote;
+    }
+
+    cite:after {
+        content: close-quote;
+    } */
+    cite {
+        quotes: '“''”''‘''’';
+        font-style: normal;
+    }
+
+    cite::before {
+        content: open-quote;
+    }
+
+    cite::after {
+        content: close-quote;
+    }
+</style>
+
+<body>
+    <!-- <p>許多報刊或雜誌的文章中，開篇第一個字都很大，通過首字放大來吸引讀都的眼球。而這個首字放大的交果，就可以使用`E::first-letter`偽選擇器來實現。</p>
+    <p>首先，使用`p:first-child`選擇第一個段落，然後，再使用`E::first-letter`偽選擇器，這樣的話，只有第一個段落中的第一僤字是正常字體的3倍，以免所有段落的第一個字都被放大。</p>
+    <hr> -->
+    <!-- <p>E::first-line偽選擇器用於選擇E元素中的第一行文本。第一行是指在瀏覽器中顯示的第一行文本，如果調整瀏覽器窗口的尺寸，第一行的內容會跟著變化。第一行的內容包括`E::before`和`E::after`插入的內容。如讓段落的第一行文本以紅色顯示</p> -->
+    <!-- <p>段落文本</p> -->
+
+    <!-- <p>子在川上日:<cite>逝者如斯夫</cite></p> -->
+    <p> 《水調歌頭。游泳》：<cite>子在川上日:<q>逝者如斯夫</q></cite></p>
+</body>
+
+</html>
