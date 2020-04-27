@@ -35,7 +35,7 @@
     cite:after {
         content: close-quote;
     } */
-    cite {
+    /* cite {
         quotes: '“''”''‘''’';
         font-style: normal;
     }
@@ -46,6 +46,76 @@
 
     cite::after {
         content: close-quote;
+    } */
+    /* a {
+        display: block;
+        padding: 4px;
+        font-size: 28px;
+    }
+
+    a::before {
+        padding-right: 10px;
+    }
+
+    a[href $="doc"]::before {
+        content: url('img/doc.png');
+    }
+
+    a[href $="xls"]::before {
+        content: url('img/xls.png');
+    } */
+
+    /* a[href ^="https://"]::after {
+        content: " [ "attr(href) "]";
+    } */
+    /* #gossiop {
+        width: 96px;
+        height: 48px;
+        background: #fff;
+        border-color: #000;
+        border-style: solid;
+        border-width: 1px 1px 50px 1px;
+        border-radius: 100%;
+        position: relative;
+    }
+
+    #gossiop::before {
+        content: "";
+        width: 12px;
+        height: 12px;
+        top: 50%;
+        left: 0;
+        position: absolute;
+        background: #fff;
+        border: 18px solid #000;
+        border-radius: 100%;
+    }
+
+    #gossiop::after {
+        content: "";
+        width: 12px;
+        height: 12px;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        background: #000;
+        border: 18px solid #fff;
+        border-radius: 100%;
+    } */
+
+    /* input::-webkit-input-placeholder {
+        color: #f00;
+        border: 1px solid #00f;
+    } */
+
+    input[ type="text"]::selection {
+        background: #0f0;
+    }
+
+    p::selection {
+        background: #000;
+        color: #fff;
+        text-shadow: 1px 1px 0 rgba(255, 255, 255, 1);
     }
 </style>
 
@@ -57,7 +127,23 @@
     <!-- <p>段落文本</p> -->
 
     <!-- <p>子在川上日:<cite>逝者如斯夫</cite></p> -->
-    <p> 《水調歌頭。游泳》：<cite>子在川上日:<q>逝者如斯夫</q></cite></p>
+    <!-- <p> 《水調歌頭。游泳》：<cite>子在川上日:<q>逝者如斯夫</q></cite></p> -->
+
+    <!-- <a href="a.doc">DOC文件</a>
+    <a href="a.xls">XLS文件</a>
+    <a href="a.ppt">PPT文件</a>
+    <a href="a.pdf">PDF文件</a>
+    <a href="a.rar">RAR文件</a>
+    <a href="a.wmv">WMV文件</a> -->
+
+    <!-- <a href="https://ttom921.github.io/">被施工的Tom的記錄</a> -->
+
+    <!-- <div id="gossiop"></div> -->
+
+    <!-- <input placeholder="用戶名"> -->
+
+    <input type="text"></input>
+    <p>滑鼠選中這段文字後，文本的背景色將會變成黑色，文本顏色會變成候色，并為文本添加了陰影，快用滑鼠選中試一試吧O(∩_∩)O~</p>
 </body>
 
 </html>
