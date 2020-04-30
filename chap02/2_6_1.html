@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.6.1 鏈接偽類選擇器</title>
+
+</head>
+
+<style>
+    a:link {
+        color: blue;
+    }
+
+    a:visited {
+        color: red;
+    }
+
+    a:visited:hover {
+        color: #888;
+    }
+
+    tr:hover {
+        background: #c1d5eb;
+    }
+
+    input:focus {
+        outline: 1px solid #c1d5eb;
+    }
+</style>
+
+<body>
+    <a href="https://ttom921.github.io/">被施工的Tom的記錄</a>
+    <br>
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+        </tr>
+        <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+        </tr>
+    </table>
+
+    <input placeholder="用戶名">
+</body>
+
+</html>
