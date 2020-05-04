@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.6.2 結構偽類選擇器</title>
+</head>
+<style>
+    .tabMenu li:first-child {
+        background-color: red;
+    }
+
+    .tabMenu li:last-child {
+        background-color: yellow;
+    }
+
+    p:empty {
+        height: 25px;
+        background: #eee;
+        border: 1px solid #f90;
+    }
+
+    .demo li:nth-child(2) {
+        background-color: red;
+    }
+
+    .demo li:nth-of-type(2) {
+        background-color: yellow;
+    }
+</style>
+
+<body>
+    <ul class="tabMenu">
+        <li><a href="#  ">公司介紹</a> </li>
+        <li><a href="#  ">產品中心</a> </li>
+        <li><a href="#  ">新聞動態</a> </li>
+    </ul>
+    <hr>
+    <div>
+        <p>我包含文本節點，我不是空元素</p>
+        <p></p>
+    </div>
+    <hr>
+    <div>
+        <ul class="demo">
+            <p>zero</p>
+            <li>one</li>
+            <li>two</li>
+        </ul>
+    </div>
+</body>
+
+</html>
