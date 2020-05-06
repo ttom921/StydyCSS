@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.6.6 UI狀態偽類選擇器</title>
+</head>
+<style>
+    input:focus {
+        background-color: yellow;
+    }
+
+    input:checked+label {
+        color: green;
+    }
+
+    input[type="text"] {
+        widows: 200px;
+        height: 20px;
+        background: #fff;
+        border: 3px solid #cbcbcb;
+    }
+
+    input[type="text"]:disabled {
+        cursor: not-allowed;
+        background: #eee;
+        border-color: #ddd;
+    }
+
+    input[type="email"]:focus:valid {
+        border: 3px solid green;
+    }
+
+    input[type="email"]:focus:invalid {
+        border: 3px solid red;
+    }
+
+    input[type="number"]:focus:in-range {
+        border: 3px solid green;
+    }
+
+    input[type="number"]:focus:out-of-range {
+        border: 3px solid red;
+    }
+</style>
+
+<body>
+
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <hr>
+    <input type="checkbox" value="1"></input><label>我已經同意閱讀并同意網站註冊條款</label>
+    <hr>
+    <label>enabled:</label><input type="text">
+    <br><br>
+    <label>disabled:</label><input type="text" disabled>
+    <hr>
+    <label>E-Mail：</label><input type="email" name="email">
+    <hr>
+    <label>請輸入數字（0～10）：</label><input type="number" min=0 max=10>
+    <hr>
+</body>
+
+</html>

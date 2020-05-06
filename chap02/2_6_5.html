@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.6.5 語言偽類選擇器</title>
+</head>
+<style>
+    :lang(en) {
+        font-family: Arial;
+        quotes: '"''"';
+    }
+
+    :lang(zh-tw) {
+        font-family: sans-serif;
+        quotes: "“""”";
+    }
+</style>
+
+<body>
+    <p lang="en"><q>Qutoe in English</q></p>
+    <p lang="zh-tw"><q>中文的引號</q></p>
+</body>
+
+</html>
