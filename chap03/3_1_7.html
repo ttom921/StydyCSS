@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.1.7 字體調整</title>
+</head>
+<style>
+    p {
+        font-size: 100px;
+    }
+
+    span:nth-child(1) {
+        font-family: Verdana;
+    }
+
+    span:nth-child(2) {
+        font-family: Times;
+    }
+
+    div>p {
+        font-size: 100px;
+    }
+
+    div>p>span:nth-child(1) {
+        font-family: Verdana;
+    }
+
+    div>p>span:nth-child(2) {
+        font-family: Times;
+        font-size-adjust: 0.58;
+    }
+</style>
+
+<body>
+    <p><span>b</span><span>b</span></p>
+    <hr>
+    <div>
+        <p><span>b</span><span>b</span></p>
+    </div>
+
+</body>
+
+</html>
