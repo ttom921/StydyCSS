@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.2.1 文本縮進</title>
+</head>
+<style>
+    article {
+        width: 500px;
+        text-indent: 10%;
+        border: 1px solid #ccc;
+    }
+
+    p {
+        width: 400px;
+    }
+</style>
+
+<body>
+    <article>
+        使用百分比時，縮進寬度相對於元素父元素的寬度進行計算。換句話說，如果將縮進值設罝為20％，則縮進父元素寬度的20％。
+        <p>在使用面分比時，需要注意的是，由於text-indent屬性具有繼承性，而子元素繼承的是text-indent屬性的計算結果，而不是其值，它可能會出現預料不到的效果。</p>
+    </article>
+</body>
+
+</html>
