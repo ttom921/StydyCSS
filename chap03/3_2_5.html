@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.2.5 垂直對齊</title>
+</head>
+<style>
+    /* p {
+        font-size: 120px;
+    } */
+
+    /* span {
+        font-size: 40px;
+        vertical-align: 20px;
+    } */
+    /* span {
+        line-height: 1;
+        font-size: 40px;
+        vertical-align: 50%;
+    } */
+
+    p {
+        line-height: 1.8;
+        font-size: 90px;
+        font-family: 'Times New Roman';
+        border: 1px solid #444;
+    }
+
+    span {
+        line-height: 1;
+        color: #00f;
+        font-size: 20px;
+    }
+
+    span:nth-child(1) {
+        vertical-align: baseline;
+    }
+
+    span:nth-child(2) {
+        vertical-align: sub;
+    }
+
+    span:nth-child(3) {
+        vertical-align: bottom;
+    }
+
+    span:nth-child(4) {
+        vertical-align: text-bottom;
+    }
+
+    span:nth-child(5) {
+        vertical-align: middle;
+    }
+
+    span:nth-child(6) {
+        vertical-align: super;
+    }
+
+    span:nth-child(7) {
+        vertical-align: text-top;
+    }
+
+    span:nth-child(8) {
+        vertical-align: top;
+    }
+</style>
+
+<body>
+    <!-- <p>xgn<span>xgh</span></p> -->
+    <p>xgn
+        <span>baseline</span>
+        <span>sub</span>
+        <span>bottom</span>
+        <span>text-bottom</span>
+        <span>middle</span>
+        <span>super</span>
+        <span>text-top</span>
+        <span>top</span>
+    </p>
+</body>
+
+</html>
