@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.2.10 文本陰影</title>
+
+</head>
+<style>
+    .stroke {
+        text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    }
+
+    .outset {
+        text-shadow: -1px -1px #fff, 1px 1px #333;
+    }
+
+    .inset {
+        text-shadow: 1px 1px #fff, -1px -1px #333;
+    }
+
+    p {
+        font-size: 36px;
+    }
+</style>
+
+<body>
+    <div style="background-color: #eee">
+        <p class="stroke">空心文字</p>
+        <p class="outset">陽文文字</p>
+        <p class="inset">陰文文字</p>
+    </div>
+
+
+</body>
+
+</html>
