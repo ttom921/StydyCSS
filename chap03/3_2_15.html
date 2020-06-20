@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.2.15 文本溢出</title>
+    <style>
+        p {
+            width: 304px;
+            height: 18px;
+            line-height: 14px;
+            font-family: Arial;
+            font-size: 14px;
+            border: 1px solid #444;
+        }
+
+        .clip {
+            text-overflow: clip;
+        }
+
+        .ellipsis {
+            text-overflow: ellipsis;
+        }
+
+        .clip,
+        .ellipsis {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+
+<body>
+    <p>未設罝 text-overflow屬性時，文本完整顯示，可能會溢出容器</p>
+    <p class="clip">text-overflow屬性取值clip時，文本溢出時，只是簡單的把溢出的部分裁剪掉</p>
+    <p class="ellipsis">text-verflowflow屬性取值ellipsis時，文本溢出時，在溢出的地𤆧顯示一個省略號</p>
+</body>
+
+</html>
