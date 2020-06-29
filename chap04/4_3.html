@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.3 外邊距</title>
+    <style>
+        /* body,
+        p,
+        h1,
+        h2,
+        h3,
+        ul,
+        ol {
+            margin: 0;
+        } */
+
+        /* p {
+            margin: 10px;
+        } */
+        /* p {
+            margin: 10px 10% 2em 20mm;
+        } */
+        /* p {
+            margin-top: 10px;
+            margin-right: 20px;
+            margin-bottom: 30px;
+            margin-left: 40px;
+        } */
+        div {
+            width: 300px;
+            border: 1px dashed #ccc;
+        }
+
+        div p {
+            border: 1px dashed #ccc;
+        }
+
+        div p:nth-child(1) {
+            margin: 10px;
+        }
+
+        div p:nth-child(2) {
+            margin: 10px -30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>這個段落的外邊距為正值</p>
+        <p>這個段落的外邊距為負值</p>
+    </div>
+</body>
+
+</html>
