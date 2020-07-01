@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.4.2 圖像邊框</title>
+    <style>
+        /* div {
+            border: 1px solid transparent;
+            width: 300px;
+            height: 120px;
+            border-image-slice: 27;
+            border-image-width: 54px;
+            border-image-source: url(../img/border-image.png);
+        } */
+        /* div {
+            display: inline-block;
+            border: 1px solid transparent;
+            width: 128px;
+            height: 128px;
+            border-image-source: url(../img/border-image.png);
+            border-image-slice: 27;
+            border-image-width: 27px;
+            border-image-repeat: repeat;
+        }
+
+        .outset {
+            border-image-outset: 27px;
+        } */
+        div {
+            text-align: center;
+            vertical-align: middle;
+            line-height: 118px;
+            border: 1px solid transparent;
+            width: 380px;
+            /*10個切片的寬度+10px*/
+            height: 118px;
+            /*4個切片的寬度+10px*/
+            border-image-slice: 27;
+            border-image-width: 27px;
+            border-image-source: url(../img/border-image.png);
+        }
+
+        .stretch {
+            border-image-repeat: stretch;
+        }
+
+        .repeat {
+            border-image-repeat: repeat;
+        }
+
+        .round {
+            border-image-repeat: round;
+        }
+
+        .space {
+            border-image-repeat: space;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <hr>
+    <hr>
+    <hr>
+    <div>
+
+    </div>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <div class="outset">
+
+    </div> -->
+
+    <div class="stretch">border-image-repeat: stretch</div>&nbsp;
+    <div class="repeat">border-image-repeat: repeat</div>&nbsp;
+    <div class="round">border-image-repeat: round</div>&nbsp;
+    <div class="space">border-image-repeat: space</div>
+
+</body>
+
+</html>
